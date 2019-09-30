@@ -11,11 +11,34 @@
     <link rel="stylesheet" href="design.css">
   </head>
   <body>
+    <?php require_once 'dbs.php'; ?>
+
+    <?php
+    $mysqli = new mysqli('localhost', 'root', '', 'datamhs') or die(mysqli_error($mysqli));
+    $result = $mysqli->query("SELECT * FROM dataa") or die($mysqli->error);
+    pre_r($result);
+
+    function pre_r( $array ){
+      echo '<pre>';
+      print_r($array);
+        echo '</pre>';
+      }
+      ?>
+
+
     <div class="row justify-content-center">
-    <form action="dbs.php" method="post">
+    <form action="dbs.php" method="POST">
+      <div class="form-group">
+        <label style="color: white">NPM</label>
+        <input type="text" name="npm" class="form-control" value="Masukkan NPM">
+      </div>
       <div class="form-group">
         <label style="color: white">Nama</label>
         <input type="text" name="name" class="form-control" value="Masukkan Nama">
+      </div>
+      <div class="form-group">
+        <label style="color: white">Jenis Kelamin</label>
+        <input type="text" name="jk" class="form-control" value="Jenis Kelamin">
       </div>
       <div class="form-group">
         <label style="color: white">Alamat</label>
