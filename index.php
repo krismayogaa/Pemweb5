@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible:" content="ie-edge"/>
     <title>Insert Data Mahasiswa</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
   </head>
   <body>
     <div class="row justify-content-center">
-    <form action="index.html" method="post">
+    <form action="dbs.php" method="post">
       <div class="form-group">
-        <label>Nama</label>
+        <label style="color: white">Nama</label>
         <input type="text" name="name" class="form-control" value="Masukkan Nama">
       </div>
       <div class="form-group">
-        <label>Alamat</label>
+        <label style="color: white">Alamat</label>
         <input type="text" name="alamat" class="form-control" value="Masukkan Alamat">
       </div>
       <div class="form-group">
